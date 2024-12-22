@@ -29,7 +29,7 @@ export class AutenticarFuncionarioComponent {
     return this.formulario.controls;
     }
 
-  autenticarFuncionario(){
+  onSubmit(){
     console.log(this.formulario.value);
   }
     

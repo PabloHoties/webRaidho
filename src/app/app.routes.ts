@@ -7,6 +7,10 @@ import { AutenticarGestorComponent } from './components/pages/autenticar-gestor/
 
 export const routes: Routes = [
     {
+        path: '', pathMatch: 'full',
+        redirectTo: 'pages/funcionarios/autenticar'
+    },
+    {
         path: 'pages/funcionarios/autenticar',
         component: AutenticarFuncionarioComponent
     },
@@ -25,9 +29,5 @@ export const routes: Routes = [
     {
         path:'pages/autenticar-gestor',
         component: AutenticarGestorComponent
-    },
-    {
-        path: '', pathMatch: 'full',
-        redirectTo: 'pages/funcionarios/autenticar'
     }
 ];
